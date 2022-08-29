@@ -1,4 +1,5 @@
 connection: "doris_connection_separate"
+include: "/views/**/*.view"
 
 datagroup: test_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
@@ -6,3 +7,5 @@ datagroup: test_default_datagroup {
 }
 
 persist_with: test_default_datagroup
+
+explore: account_holder_info {}
